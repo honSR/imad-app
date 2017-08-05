@@ -18,7 +18,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/articletwo', function (req, res) {
-    res.send('Article two coming soon.');
+  res.sendFile(path.join(__dirname, 'ui', 'ArticleTwo.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
@@ -26,7 +26,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/articlethree', function (req, res) {
-    res.send('Article three coming soon.');
+    res.sendFile(path.join(__dirname, 'ui', 'ArticleThree.html'));
 });
 
 
